@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "933124096862",
+    "project_id": "bike-hire-8f968",
+    "storage_bucket": "bike-hire-8f968.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933124096862:android:cb690767939b73f5af45cf",
+        "android_client_info": {
+          "package_name": "com.example.bikehire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933124096862-pqv3n9t794smjq7ael63sdun4td2umuf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bikehire",
+            "certificate_hash": "9a62ac0dddaa6ae64b0dd685ac0aafbaaa367727"
+          }
+        },
+        {
+          "client_id": "933124096862-cj193ors60goog9i1lfvflta7hsi3cr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcRAq9DyUL9kNsZn3bO8Cf5aAvhw3PlTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933124096862-cj193ors60goog9i1lfvflta7hsi3cr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

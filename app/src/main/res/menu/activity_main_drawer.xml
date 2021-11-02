@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_model"
+            android:icon="@drawable/ic_baseline_pedal_bike_24"
+            android:iconTint="@color/white"
+            android:title="Model" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:iconTint="@color/white"
+            android:title="Cart" />
+        <item
+            android:id="@+id/nav_hire"
+            android:icon="@drawable/ic_baseline_hireinfo_24"
+            android:iconTint="@color/white"
+            android:title="Hire" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:iconTint="@color/white"
+            android:title="Logout" />
+
+    </group>
+</menu>
