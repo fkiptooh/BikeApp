@@ -1,6 +1,7 @@
 package com.example.bikehire;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -120,18 +121,24 @@ public class Home extends AppCompatActivity implements  NavigationView.OnNavigat
                 categoryViewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        Toast.makeText(Home.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(Home.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
+                          //Getting bike list with respect to modelsID
+                        Intent bikelist = new Intent (Home.this,BikeList.class);
+                        //getting the modelsID and using it because its a key as well
+                        bikelist.putExtra("ModelsID",adapter.getRef(position).getKey());
+                        startActivity(bikelist);
                     }
                 });
             }
         };
         recycler_menu.setAdapter(adapter);
-    }
-    @Override
-    protected void onStart() {
-        super.onStart();
         adapter.startListening();
     }
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        adapter.startListening();
+//    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
